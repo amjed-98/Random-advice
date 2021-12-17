@@ -13,7 +13,7 @@ export default class App extends Component {
 
   fetchAdvice = () => {
     const sendReq = async () => {
-      const id = Math.floor(Math.random() * 200);
+      const id = Math.floor(Math.random() * 100);
       const res = await axios.get(`https://api.adviceslip.com/advice/${id}`);
 
       // if error
